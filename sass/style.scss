@@ -1,0 +1,547 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+.clearFix:before,
+.clearFix:after {
+    content: " ";
+    display: table;
+}
+
+.clearFix:after {
+    clear: both;
+}
+
+header {
+    width: 100%;
+    position: fixed; //
+    //        background-color: hotpink;
+    //
+    height: 90px;
+    z-index: 5;
+    .container {
+        top: 0;
+        max-width: 1800px;
+        margin: 0 auto;
+        text-align: center;
+        .clearFix {
+            position: relative;
+            .arcImg {
+                margin: 17px;
+                position: absolute;
+                img {
+                    width: 140px;
+                    height: 60px;
+                }
+            }
+            ul {
+                position: absolute;
+                right: 0;
+                top: 0;
+                list-style-type: none;
+                li {
+                    display: inline-block;
+                    a {
+                        height: 50px;
+                        padding: 0 20px;
+                        display: block;
+                        color: #a2a2a2;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        line-height: 50px;
+                        transition: 0.2s;
+                        &:hover {
+                            color: #126dff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+///////////////////      FIRS       TPAGE     ////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+.firstPage .onImgElements {
+    background-image: url(../img/paralax_photo.jpg);
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.80);
+    p:first-child {
+        margin: 0;
+        padding-top: 50vh;
+        height: 59px; //        font-family: Roboto;
+        font-size: 61.5px;
+        font-weight: 100;
+        text-align: center;
+        color: #ffffff;
+        z-index: 10;
+        span:first-child {
+            color: #1f69df;
+        }
+    }
+    p:nth-child(2) {
+        font-size: 20px;
+        padding-top: 50px;
+        text-align: center;
+        color: #ffffff;
+    }
+    div {
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: #e5e5e5;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            border-radius: 28px;
+            padding: 10px 20px 10px 20px;
+            font-size: 20px;
+            border: 0;
+            background-color: #0b4fbc;
+            text-align: center;
+            transition: 0.2s;
+            &:hover {
+                background-color: #e5e5e5;
+                color: #0b4fbc;
+            }
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+///////////////////      SECOUND       TPAGE     /////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+.secoundPage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; //    background-color: #eb0000;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    color: #bdbdbd;
+    .firstBox {
+        width: 50%;
+        .insideBox {
+            margin: auto;
+            width: 460px;
+            p:first-child {
+                font-size: 90px;
+                font-weight: 100;
+            }
+            p:last-of-type {
+                font-size: 16px;
+            }
+            .btn {
+
+                text-align: left;
+                padding-top: 150px;
+                a {
+                    text-decoration: none;
+                    color: #e5e5e5;
+                    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+                    border-radius: 28px;
+                    padding: 10px 20px 10px 20px;
+                    font-size: 20px;
+                    border: 0;
+                    background-color: #0b4fbc;
+                    text-align: center;
+                    transition: 0.2s;
+                    &:hover {
+                        background-color: #e5e5e5;
+                        color: #0b4fbc;
+                    }
+                }
+            }
+        }
+    }
+    .secoundBox {
+        margin-top: 200px;
+        display: flex;
+        align-items: center;
+        width: 50%;
+        .insideBoxOne {
+            width: 50%;
+            text-align: right;
+            p:first-child {
+                font-size: 50px;
+                color: #1f69df;
+                font-weight: 100;
+            }
+        }
+        .insideBoxTwo {
+            width: 50%;
+            .imgElo {
+                background-image: url(../img/shape-1-copy-3.svg);
+                width: 100%;
+                height: 500px;
+                margin-top: 120px;
+                background-position: right;
+                background-repeat: no-repeat;
+
+            }
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+///////////////////      THIRD       TPAGE     ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+.thirdPage {
+    display: flex;
+    height: 100vh;
+    .paralaxImg {
+        background-image: url(../img/paralax_photo.jpg);
+        height: 100vh;
+        width: 50%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    .education {
+        padding-left: 5%;
+        padding-right: 10%;
+        margin-top: 150px;
+        color: #d3d3d3;
+        width: 50%;
+        p:first-child {
+            font-size: 90px;
+            font-weight: 100;
+        }
+        p:nth-child(2) {
+            color: #7b7b7b;
+            font-size: 40px;
+            font-weight: 300;
+            span:nth-child(2) {
+                color: #1f69df;
+            }
+        }
+        p:nth-child(3) {
+            color: #979797;
+            span {
+                color: #1f69df;
+            }
+        }
+        .btn {
+            text-align: left;
+            padding-top: 5%;
+            a {
+                text-decoration: none;
+                color: #e5e5e5;
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+                border-radius: 28px;
+                padding: 10px 20px 10px 20px;
+                font-size: 20px;
+                border: 0;
+                background-color: #0b4fbc;
+                text-align: center;
+                transition: 0.2s;
+                &:hover {
+                    background-color: #e5e5e5;
+                    color: #0b4fbc;
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+///////////////////      FOURTH       TPAGE     //////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+.fourthPage {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    .sliderImg {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+    .expirience {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        .boxA {
+            padding: 0 0 0 50px;
+            p {
+                max-width: 450px;
+                font-weight: 100;
+            }
+            p:first-child {
+                color: #d3d3d3;
+                font-size: 90px;
+                margin-top: 0;
+            }
+            p:nth-child(2) {
+                margin-top: 0;
+                font-size: 30px;
+                color: #1b181b;
+            }
+            p:nth-child(3) {
+                font-size: 13;
+                color: #d2d2d2;
+                span {
+                    color: #1f69df;
+                }
+            }
+            p:nth-child(4) {
+                font-size: 15px;
+                max-width: 400px;
+                color: #bcbcbc;
+            }
+        }
+    }
+    .tagsLogsImg {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        img {
+            max-width: 900px;
+            margin: auto;
+        }
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+///////////////////      FIFTH       TPAGE     ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+.fifthPage {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    .service {
+        width: 100%;
+        p {
+            font-size: 90px;
+            font-weight: 100;
+            color: #d3d3d3;
+            margin: 150px 0 0 5%;
+        }
+    }
+    .wholeBox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .prototyping {
+            width: 26.66%;
+            margin: 0 0 0 5%;
+            img {
+                position: absolute;
+            }
+            p {
+                margin-left: 60px;
+                color: #bdbdbd;
+                max-width: 320px;
+            }
+            p:nth-child(2) {
+                color: #5d5d5d;
+            }
+
+        }
+        .mobile {
+            width: 26.66%;
+            margin: 0 0 0 5%;
+            img {
+                position: absolute;
+            }
+            p {
+                margin-left: 60px;
+                color: #bdbdbd;
+                max-width: 320px;
+            }
+            p:nth-child(2) {
+                color: #5d5d5d;
+            }
+
+        }
+        .artificial {
+            width: 26.66%;
+            margin: 0 5% 0 5%;
+            img {
+                position: absolute;
+            }
+            p {
+                margin-left: 70px;
+                color: #bdbdbd;
+                max-width: 320px;
+            }
+            p:nth-child(2) {
+                color: #5d5d5d;
+            }
+
+        }
+        .langue {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            img {
+                margin: 0 40px;
+            }
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+///////////////////      SIXTH     TPAGE     /////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+.sixthPage {
+    background-image: url(../img/Depositphotos_76413377_original.jpg);
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.80);
+    .text {
+        padding-top: 5%;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+        p:first-child {
+            font-size: 90px;
+            color: #d3d3d3;
+            font-weight: 100;
+        }
+        p:nth-child(2) {
+            color: #adadad;
+            font-size: 15px;
+            font-weight: 300;
+        }
+        .btn {
+            padding-top: 5%;
+            a {
+                text-decoration: none;
+                color: #e5e5e5;
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+                border-radius: 28px;
+                padding: 10px 20px 10px 20px;
+                font-size: 20px;
+                border: 0;
+                background-color: #0b4fbc;
+                text-align: center;
+                transition: 0.2s;
+                &:hover {
+                    background-color: #e5e5e5;
+                    color: #0b4fbc;
+                }
+            }
+        }
+    }
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+///////////////////      SEVENTH     TPAGE     ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+.seventhPage {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    margin: auto;
+    .box {
+        width: 100%;
+        margin: 150px 5% 0;
+        .staffImg {
+            background-image: url(../img/99930184.jpg);
+            height: 340px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-width: 900px;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .contactIfno {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 5%;
+        justify-content: space-between;
+        .contact {
+            font-size: 90px;
+            color: #d3d3d3;
+            font-weight: 100;
+            width: 25%;
+            p {
+                margin: 0;
+            }
+        }
+        .info {
+            width: 25%;
+            ul {
+                li {
+                    list-style-type: none;
+                }
+                li:nth-child(1) {
+                    p:nth-child(1) {
+                        font-size: 19px;
+                        color: #5d5d5d;
+                    }
+                }
+                li:nth-child(2),
+                li:nth-child(3) {
+                    font-size: 15px;
+                    color: #bdbdbd;
+                    font-weight: 300;
+                }
+            }
+        }
+        .person {
+            width: 25%;
+            font-size: 15px;
+            img {
+                position: absolute;
+            }
+            p {
+                margin-left: 65px;
+                &:nth-child(2) {
+                    color: #5d5d5d;
+                    margin-bottom: 2px;
+                    font-weight: 600;
+                }
+                &:nth-child(3) {
+                    color: #bdbdbd;
+                    margin-top: 0;
+                }
+                &:nth-child(4) {
+                    color: #bdbdbd;
+                    margin-top: 40px;
+                    margin-bottom: 2px;
+                }
+                &:nth-child(5) {
+                    margin-top: 0;
+                    color: #1f69df;
+                }
+            }
+        }
+    }
+}
